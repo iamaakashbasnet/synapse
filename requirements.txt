@@ -11,6 +11,8 @@ mccabe==0.7.0
 platformdirs==3.0.0
 pycodestyle==2.10.0
 pylint==2.16.1
+pylint-django==2.5.3
+pylint-plugin-utils==0.7
 pytz==2022.7.1
 sqlparse==0.4.3
 tomlkit==0.11.6
