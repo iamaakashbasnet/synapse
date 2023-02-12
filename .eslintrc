@@ -4,14 +4,25 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["prettier"], // Prettier should be at last
+  "extends": [
+    // "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "jest"],
-  "rules": {}
+  "plugins": ["react", "@typescript-eslint", "import", "jest", "prettier"],
+  "rules": { "no-console": "warn", "no-alert": "warn", "no-eval": "error" }
 }
